@@ -1,0 +1,18 @@
+
+
+/* Début de styles.css */
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Raleway Italic";
+    src: url("../font/Raleway-Italic-VariableFont_wght.ttf")
+}
+
+body{
+    padding:0;
+    margin:0;
+    font-family: "Raleway";
+}
