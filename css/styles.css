@@ -13,6 +13,130 @@
 
 body{
     padding:0;
-    margin:0;
+    margin:40px;
     font-family: "Raleway";
+    background-color:white;
+}
+nav{
+    position: relative;
+}
+nav > ul{
+    list-style: none;
+    display:flex;
+    position: absolute;
+    top:0;
+    right:0
+}
+nav > ul li{
+    margin:0px 30px;
+    font-size: larger;
+    position: relative;
+}
+nav li a:hover{
+    color:#0065FC;
+}
+nav li a:hover::before{
+    content: '';
+    background-color: #0065FC;
+    width: 125%;
+    height: 3px;
+    position: absolute;
+    top:-56px;
+    left:-12%;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+nav p{
+    margin-top: 5px;
+}
+nav h3{
+    margin-bottom: 0;
+}
+.searchbox{
+    position:relative;
+}
+.pin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    position: absolute;
+    border-radius: 10px 0px 0px 10px;
+    width: 35px;
+    height: 35px;
+}
+.searchbox #champ-recherche{
+    position: absolute;
+    padding-left:12px;
+    left:35px;
+    height: 29px;
+    border: #F2F2F2 solid;
+}
+.searchbox #btn-recherche{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border:none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    color: white;
+    height: 35px;
+    width: 100px;
+    left: 209px;
+}
+.filtres{
+    position: relative;
+}
+.filtres ul{
+    list-style: none;
+    display: flex;
+    padding:0;
+    position: absolute;
+}
+.filtres ul li{
+    position:relative;
+    border: grey solid thin;
+    border-radius: 20px;
+    margin: 12px;
+    padding: 10px;
+    padding-left: 45px; 
+    font-weight: bolder;
+}
+.filtres ul li:first-child{
+    border:0;
+    padding-left:0;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color:#0065FC;
+    background-color:#DEEBFF ;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    left:-2px;
+    top:-1px;
+
+}
+.info{
+    position: relative;
+    left: 38px;
+}
+.info-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    color: #0065FC;
+    border: grey solid thin;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top:-7px;
+    left:-38px;
 }

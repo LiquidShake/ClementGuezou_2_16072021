@@ -5,45 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/75d31a77d1.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 <body>
     <!-- TOUTE LA BARRE DE NAVIGATION -->
     <header>
         <nav>
+            <div class="logo"><img src="./img/logo/Reservia.svg" alt="logo reservia"></div>
+            <br>
+            <br>
+            <br>
             <ul>
                 <li> 
-                    <a href="#">Hébergements</a>
+                    <a href="#hebergements"><strong>Hébergements</strong></a>
                 </li>
                 <li>
-                    <a href="#">Activités</a>
+                    <a href="#activites"><strong>Activités</strong></a>
                 </li>
                 <li>
-                    <a href="#">S'inscrire</a>
+                    <a href="#"><strong>S'inscrire</strong></a>
                 </li>
             </ul>
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-            <h3>En plein centre ville ou en pleine nature</h3>
+            <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+            <p>En plein centre ville ou en pleine nature</p>
             <div class="searchbox">
-                <div>PIN</div>
-                <input type="text" name="localisation" id="" value="Marseille, France">
-                <input type="submit" value="Rechercher">
+                <div class="pin"><i class="fas fa-map-marker-alt"></i></div>
+                <input type="text" name="localisation" id="champ-recherche" value="Marseille, France">
+                <input type="submit" id="btn-recherche" value="Rechercher">
             </div>
+            <br>
+            <br>
             <div class="filtres">
-                <p><strong>Filtres</strong></p>
                 <ul>
-                    <li>Économique</li>
-                    <li>Familial</li>
-                    <li>Romantique</li>
-                    <li>Animaux autorisés</li>
+                    <li><strong>Filtres</strong></li>
+                    <li><div class="icon"><i class="fas fa-money-bill-wave"></i></div>Économique</li>
+                    <li><div class="icon"><i class="fas fa-child"></i></div>Familial</li>
+                    <li><div class="icon"><i class="fas fa-heart"></i></div>Romantique</li>
+                    <li><div class="icon"><i class="fas fa-dog"></i></div>Animaux autorisés</li>
                 </ul>
             </div>
         </nav>
-        <div class="info">Plus de 500 logements sont disponibles dans cette ville</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="info"><div class="info-icon"><i class="fas fa-info"></i></div>Plus de 500 logements sont disponibles dans cette ville</div>
     </header>
 
     <!-- SECTION HEBERGEMT -->
-    <section>
+    <section id="hebergements">
         <div>
             <h3>Hébergements à Marseille</h3>
             <ul>
@@ -57,7 +69,7 @@
             <a href="#">Afficher plus</a>
         </div>
         <div>
-            <h3>Les plus populaires</h3>
+            <h3>Les plus populaires <i class="fas fa-chart-line"></i></h3>
             <ul>
                 <li></li>
                 <li></li>
@@ -67,7 +79,7 @@
     </section>
 
     <!-- SECTION ACTIVITES -->
-    <section>
+    <section id="activites">
         <h3>Activités à Marseille</h3>
         <ul>
             <li></li>
