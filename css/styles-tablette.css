@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (min-width: 640px) and (max-width: 768px) {
     .filtres ul{
         flex-wrap: wrap;
     }
@@ -14,10 +14,18 @@
         grid-template-columns: 1fr 1fr;
     }
     #activites ul{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
             "port pom" 
             "cal ndlg"
             "fri lgchp";
+    }
+    #activites ul li{
+        height: auto;
+    }
+    #activites ul li:nth-child(6){
+        position: unset;
     }
     .card-activite .card-activite-img{
         height:200px !important;

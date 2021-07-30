@@ -4,8 +4,7 @@
     }
     nav .navigation li:nth-child(1){
         top:60px;
-        left:0;
-
+        left:130px;
     }   
     nav .navigation li:nth-child(1) a{
         color:#0065FC;
@@ -21,7 +20,7 @@
     }
     nav .navigation li:nth-child(2){
         top:60px;
-        left:60px;
+        left:150px;
     }
     nav .navigation li:nth-child(2):after{
         content: '';
@@ -97,7 +96,7 @@
         width:110%
     }
     .hebergements-pop ul{
-        margin-right:40px;
+        margin:0 0 0 -10px;
     }
     .hebergements-main{
         background-color: white;
@@ -111,7 +110,7 @@
         grid-template-columns: 1fr;
         row-gap: 30px;
         padding:0;
-        margin-right:40px
+        margin:0 0 0 -10px;
     }
     .card-item-main{
         background-color: white;
@@ -129,6 +128,7 @@
     }
     .card-item-main .texte{
         padding-left:10px;
+        margin-top:10px;
     }
     .card-item-main .titre{
         font-weight: bolder;
@@ -139,7 +139,7 @@
     }
     .card-item-main .rate{
         grid-area: rate;
-        margin-top:20px;
+
     }
     .card-item-main .card-img{
         width: 100%;
@@ -149,6 +149,7 @@
     }
     #activites ul{
         grid-auto-rows: 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
             "port"
             "pom"
@@ -156,6 +157,12 @@
             "cal"
             "ndlg"
             "lgchp";
+    }
+    #activites ul li{
+        height: auto;
+    }
+    #activites ul li:nth-child(6){
+        position: unset;
     }
     .card-activite-img{
         height:200px !important;

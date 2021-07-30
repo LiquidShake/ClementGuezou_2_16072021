@@ -312,8 +312,9 @@ nav h3{
 }
 #activites ul{
     display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-        "port pom cal ndlg"
         "port pom cal ndlg"
         "port fri cal lgchp";
     grid-gap: 30px;
@@ -324,74 +325,85 @@ nav h3{
     background-color: white;
     border-radius:15px;
     box-shadow: 5px 5px 5px rgb(228, 228, 228);
-
+    display:grid;
+    grid-template-rows: 0.5fr 0.5fr 0.1fr;
+    grid-template-areas: 
+        "img"
+        "img"
+        "titre";
 }
 .card-activite:hover{
     transform: scale(1.1);
     transition-duration: .3s;
     cursor:pointer;
 }
+.card-activite .card-activite-img{
+    grid-area:img
+}
 .card-activite .titre-activite{
     margin:15px;
+    grid-area:titre;
 }
 .card-activite:nth-child(1){
     grid-area:port;
+    height:535px
 }
 .card-activite:nth-child(1) .card-activite-img{
     background:url("../img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    height:470px;
     border-radius:15px 15px 0 0;
 }
 .card-activite:nth-child(2){
     grid-area: pom;
+    height:300px
 }
 .card-activite:nth-child(2) .card-activite-img{
     background:url("../img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    height:200px;
     border-radius:15px 15px 0 0;
 }
 .card-activite:nth-child(3){
     grid-area: fri;
+    height:200px
 }
 .card-activite:nth-child(3) .card-activite-img{
     background:url("../img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    height:200px;
     border-radius:15px 15px 0 0;
 }
 .card-activite:nth-child(4){
     grid-area: cal;
+    height:535px
 }
 .card-activite:nth-child(4) .card-activite-img{
     background:url("../img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    height:470px;
     border-radius:15px 15px 0 0;
 }
 .card-activite:nth-child(5){
     grid-area: ndlg;
+    height:200px;
 }
 .card-activite:nth-child(5) .card-activite-img{
     background:url("../img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    height:200px;
     border-radius:15px 15px 0 0;
 }
 .card-activite:nth-child(6){
     grid-area: lgchp;
+    height:300px;
+    position:relative;
+    top:-96px;
 }
 .card-activite:nth-child(6) .card-activite-img{
     background:url("../img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    height:200px;
     border-radius:15px 15px 0 0;
 }
 footer{
