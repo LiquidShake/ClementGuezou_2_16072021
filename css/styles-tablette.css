@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+    .filtres ul{
+        flex-wrap: wrap;
+    }
+    #hebergements{
+        display:flex;
+        flex-direction: column;
+        margin:-40px 40px 40px 40px;
+    }
+    .hebergements-pop{
+        order:-1;
+    }
+    .hebergements-main ul{
+        grid-template-columns: 1fr 1fr;
+    }
+    #activites ul{
+        grid-template-areas:
+            "port pom" 
+            "cal ndlg"
+            "fri lgchp";
+    }
+    .card-activite .card-activite-img{
+        height:200px !important;
+    }
+}

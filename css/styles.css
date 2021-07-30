@@ -17,6 +17,11 @@ body{
     font-family: "Raleway";
     background-color:white;
 }
+.wrapper{
+    width:100%;
+    margin:0;
+    padding:0;
+}
 header{
     margin:40px;
 }
@@ -91,6 +96,9 @@ nav h3{
     width: 100px;
     left: 209px;
 }
+.btn-recherche{
+    display:none;
+}
 .filtres{
     position: relative;
 }
@@ -98,7 +106,8 @@ nav h3{
     list-style: none;
     display: flex;
     padding:0;
-    position: absolute;
+    position: relative;
+    margin-top:70px;
 }
 .filtres ul li{
     position:relative;
@@ -241,7 +250,7 @@ nav h3{
 .hebergements-pop ul{
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 20px;
+    row-gap: 30px;
     padding:0;
 }
 .card-item-pop{
@@ -252,15 +261,18 @@ nav h3{
     line-height: 25px;
     display: grid;
     grid-template-areas: 
-        "img img img . titre"
-        "img img img . prix"
-        "img img img . ."
-        "img img img . rate";
+        "img img img titre"
+        "img img img prix"
+        "img img img ."
+        "img img img rate";
 }
 .card-item-pop:hover{
     transform: scale(1.1);
     transition-duration: .3s;
     cursor:pointer;
+}
+.card-item-pop .texte{
+    padding-left:10px;
 }
 .card-item-pop .titre{
     font-weight: bolder;
@@ -271,6 +283,7 @@ nav h3{
 }
 .card-item-pop .rate{
     grid-area: rate;
+    margin-top:50px;
 }
 .card-item-pop .card-img{
     width: 100%;
@@ -303,7 +316,7 @@ nav h3{
         "port pom cal ndlg"
         "port pom cal ndlg"
         "port fri cal lgchp";
-    grid-gap: 20px;
+    grid-gap: 30px;
     padding:0;
 
 }
