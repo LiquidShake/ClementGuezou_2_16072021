@@ -1,0 +1,175 @@
+@media (max-width: 640px) {
+    .wrapper{
+        overflow-x: hidden;
+    }
+    nav .navigation li:nth-child(1){
+        top:60px;
+        left:130px;
+    }   
+    nav .navigation li:nth-child(1) a{
+        color:#0065FC;
+    }
+    nav .navigation li:nth-child(1)::after{
+        content: '';
+        background-color: #0065FC;
+        width: 300%;
+        height: 3px;
+        position: absolute;
+        bottom:-20px;
+        left:-55%;
+    }
+    nav .navigation li:nth-child(2){
+        top:60px;
+        left:150px;
+    }
+    nav .navigation li:nth-child(2):after{
+        content: '';
+        background-color: #F2F2F2;
+        width: 370%;
+        height: 3px;
+        position: absolute;
+        bottom:-20px;
+        left:-50px;
+    }
+    nav h3{
+        margin-top:100px;
+        font-size:1.4em;
+    }
+    .searchbox .pin{
+        width:50px;
+        height:50px;
+    }
+    .searchbox #champ-recherche{
+        height:46px;
+        left:50px;
+        border:#F2F2F2 1px solid;
+    }
+    .searchbox #btn-recherche{
+        display:none;
+    }
+    .searchbox .btn-recherche{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:50px;
+        height:50px;
+        background-color:#0065FC;
+        border-radius: 10px;
+        color:white;
+        position: absolute;
+        left:230px;
+    }
+    .filtres ul{
+        position:relative;
+        display:grid;
+        grid-template-areas:
+            "filtre ."
+            "eco fam"
+            "rom ."
+            "ani ani";
+        margin-top:70px;
+    }
+    .filtres ul li:nth-child(1){
+        grid-area:filtre;
+    }
+    .filtres ul li:nth-child(2){
+        grid-area:eco;
+    }
+    .filtres ul li:nth-child(3){
+        grid-area:fam;
+    }
+    .filtres ul li:nth-child(4){
+        grid-area:rom;
+    }
+    .filtres ul li:nth-child(5){
+        grid-area:ani;
+        width:55%;
+    }
+    #hebergements{
+        display: flex;
+        flex-direction: column;
+    }
+    .hebergements-pop{
+        order:-1;
+        margin:0 0 0 -40px;
+        border-radius: 0;
+        width:110%
+    }
+    .hebergements-pop ul{
+        margin:0 0 0 -10px;
+    }
+    .hebergements-main{
+        background-color: white;
+        margin:0 0 0 -40px;
+        border-radius: 0;
+        width:110%
+    }
+    .hebergements-main ul{
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        padding:0;
+        margin:0 0 0 -10px;
+    }
+    .card-item-main{
+        background-color: white;
+        border-radius:15px;
+        box-shadow: 5px 5px 20px 7px rgb(228, 228, 228);
+        padding:10px;
+        line-height: 25px;
+        display: grid;
+        grid-template-areas: 
+            "img img img "
+            "img img img "
+            "titre titre titre"
+            "prix prix prix"
+            "rate rate rate";
+    }
+    .card-item-main .texte{
+        padding-left:10px;
+        margin-top:10px;
+    }
+    .card-item-main .titre{
+        font-weight: bolder;
+        grid-area: titre;
+    }
+    .card-item-main .prix{
+        grid-area: prix;
+    }
+    .card-item-main .rate{
+        grid-area: rate;
+
+    }
+    .card-item-main .card-img{
+        width: 100%;
+        height:150px;
+        border-radius: 10px 10px 0 0;
+        grid-area: img;
+    }
+    #activites ul{
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "port"
+            "pom"
+            "fri"
+            "cal"
+            "ndlg"
+            "lgchp";
+    }
+    #activites ul li{
+        height: auto;
+    }
+    #activites ul li:nth-child(6){
+        position: unset;
+    }
+    .card-activite-img{
+        height:200px !important;
+    }
+    footer{
+        flex-direction: column;
+        align-items: normal;
+        padding-left:30px;
+    }
+}
