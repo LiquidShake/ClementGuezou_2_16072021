@@ -1,5 +1,3 @@
-
-
 /* Début de styles.css */
 
 @font-face {
@@ -10,7 +8,6 @@
     font-family: "Raleway Italic";
     src: url("../font/Raleway-Italic-VariableFont_wght.ttf")
 }
-
 body{
     padding:0;
     margin:0;
@@ -265,6 +262,7 @@ nav h3{
         "img img img prix"
         "img img img ."
         "img img img rate";
+
 }
 .card-item-pop:hover{
     transform: scale(1.1);
@@ -272,7 +270,7 @@ nav h3{
     cursor:pointer;
 }
 .card-item-pop .texte{
-    padding-left:10px;
+    padding-left:30px;
 }
 .card-item-pop .titre{
     font-weight: bolder;

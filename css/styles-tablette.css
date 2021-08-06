@@ -10,6 +10,10 @@
     .hebergements-pop{
         order:-1;
     }
+    .card-item-pop{
+        width:80%;
+        margin:0 10%;
+    }
     .hebergements-main ul{
         grid-template-columns: 1fr 1fr;
     }
