@@ -1,7 +1,7 @@
 @media only screen and (min-width : 1824px) {
     .wrapper{
-        width:80%;
-        margin:0 10% 0 10%;
+        width:70%;
+        margin:0 15%;
         display: flex;
         justify-content: center;
         align-items: center;
